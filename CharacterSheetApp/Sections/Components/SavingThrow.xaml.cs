@@ -18,17 +18,25 @@ namespace CharacterSheetApp.Sections.Components
     /// </summary>
     public partial class SavingThrow : UserControl
     {
-        public static readonly DependencyProperty SaveNameProperty = DependencyProperty.Register(nameof(SaveName), typeof(string), typeof(SavingThrow));
+        private string _saveName;
         public string SaveName
         {
-            get => GetValue(SaveNameProperty) as string;
-            set => SetValue(SaveNameProperty, value);
+            get { return _saveName; }
+            set
+            {
+                Tag.Abbreviation = value;
+                _saveName = value;
+            }
         }
-        public static readonly DependencyProperty SaveAbilityProperty = DependencyProperty.Register(nameof(SaveAbility), typeof(string), typeof(SavingThrow));
+        private string _saveAbility;
         public string SaveAbility
         {
-            get => GetValue(SaveAbilityProperty) as string;
-            set => SetValue(SaveAbilityProperty, value);
+            get { return _saveAbility; }
+            set
+            {
+                Tag.FullName = value;
+                _saveAbility = value;
+            }
         }
 
         public SavingThrow()

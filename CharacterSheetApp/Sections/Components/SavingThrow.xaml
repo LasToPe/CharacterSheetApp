@@ -22,7 +22,7 @@
             <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
 
-        <local:BlackTag Abbreviation="{Binding SaveName}" FullName="{Binding SaveAbility}" />
+        <local:BlackTag x:Name="Tag" />
         <TextBox Grid.Column="1" Text="{Binding Total}" TextAlignment="Center" />
         <TextBlock Grid.Column="2" Text="=" Style="{DynamicResource Center}" />
         <TextBox Grid.Column="3" Text="{Binding BaseSave}" TextAlignment="Center" />
