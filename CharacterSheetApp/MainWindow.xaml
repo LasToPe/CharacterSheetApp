@@ -7,38 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="900" Width="1250" MinWidth="1250">
     <Grid>
-        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="10">
-                <Image Source="./Assets/Pathfinder-logo.png" MaxWidth="400" />
-                <sections:InformationSection />
-                <Grid Margin="0,15,0,0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-
-                    <StackPanel>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-
-                            <sections:AbilityScores Grid.Column="0" />
-                            <StackPanel Grid.Column="1">
-                                <sections:HitPoints />
-                                <sections:Initiative Margin="0,10" />
-                                <sections:Speed Margin="0,10" />
-                            </StackPanel>
-                        </Grid>
-                        <sections:ArmorClass Margin="0,15" />
-                        <sections:SavingThrows />
-                    </StackPanel>
-                    <StackPanel Grid.Column="1">
-                        <sections:Skills />                    
-                    </StackPanel>
-                </Grid>
-            </StackPanel>
-        </ScrollViewer>
+        <Frame x:Name="MainContent" NavigationUIVisibility="Hidden" />
     </Grid>
 </Window>

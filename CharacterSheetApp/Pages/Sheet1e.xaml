@@ -1,0 +1,46 @@
+﻿<Page x:Class="CharacterSheetApp.Pages.Sheet1e"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CharacterSheetApp.Pages" xmlns:sections="clr-namespace:CharacterSheetApp.Sections"
+      mc:Ignorable="d" d:DesignWidth="1250"
+      Title="Sheet1e">
+
+    <Grid>
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="10">
+                <Image Source="/Assets/Pathfinder-logo.png" MaxWidth="400" />
+                <sections:InformationSection />
+                <Grid Margin="0,15,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <sections:AbilityScores Grid.Column="0" />
+                            <StackPanel Grid.Column="1">
+                                <sections:HitPoints />
+                                <sections:Initiative Margin="0,10" />
+                                <sections:Speed Margin="0,10" />
+                            </StackPanel>
+                        </Grid>
+                        <sections:ArmorClass Margin="0,10,0,0" />
+                        <sections:SavingThrows Margin="0,10,0,0" />
+                        <sections:BaseAttack Margin="0,10,0,0" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <sections:Skills />
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
