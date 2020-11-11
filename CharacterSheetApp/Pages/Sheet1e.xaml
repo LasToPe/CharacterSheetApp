@@ -35,6 +35,7 @@
                         <sections:ArmorClass Margin="0,10,0,0" />
                         <sections:SavingThrows Margin="0,10,0,0" />
                         <sections:BaseAttack Margin="0,10,0,0" />
+                        <sections:CombatManeuver Margin="0,10,0,0" />
                     </StackPanel>
                     <StackPanel Grid.Column="1">
                         <sections:Skills />
