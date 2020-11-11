@@ -16,7 +16,7 @@
                             <RectangleGeometry Rect="0,0,200,15" />
                         </CombinedGeometry.Geometry1>
                         <CombinedGeometry.Geometry2>
-                            <EllipseGeometry Center="0,0" RadiusX="40" RadiusY="15" />
+                            <EllipseGeometry Center="0,0" RadiusX="20" RadiusY="15" />
                         </CombinedGeometry.Geometry2>
                     </CombinedGeometry>
                     <CombinedGeometry GeometryCombineMode="Exclude">
@@ -24,7 +24,7 @@
                             <RectangleGeometry Rect="200,0,200,15" />
                         </CombinedGeometry.Geometry1>
                         <CombinedGeometry.Geometry2>
-                            <EllipseGeometry Center="400,0" RadiusX="40" RadiusY="15" />
+                            <EllipseGeometry Center="400,0" RadiusX="20" RadiusY="15" />
                         </CombinedGeometry.Geometry2>
                     </CombinedGeometry>
                     <CombinedGeometry GeometryCombineMode="Exclude">
@@ -32,7 +32,7 @@
                             <RectangleGeometry Rect="0,15,200,15" />
                         </CombinedGeometry.Geometry1>
                         <CombinedGeometry.Geometry2>
-                            <EllipseGeometry Center="0,30" RadiusX="40" RadiusY="15" />
+                            <EllipseGeometry Center="0,30" RadiusX="20" RadiusY="15" />
                         </CombinedGeometry.Geometry2>
                     </CombinedGeometry>
                     <CombinedGeometry GeometryCombineMode="Exclude">
@@ -40,7 +40,7 @@
                             <RectangleGeometry Rect="200,15,200,15" />
                         </CombinedGeometry.Geometry1>
                         <CombinedGeometry.Geometry2>
-                            <EllipseGeometry Center="400,30" RadiusX="40" RadiusY="15" />
+                            <EllipseGeometry Center="400,30" RadiusX="20" RadiusY="15" />
                         </CombinedGeometry.Geometry2>
                     </CombinedGeometry>
                 </GeometryGroup>
