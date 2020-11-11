@@ -5,47 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CharacterSheetApp.Sections.Components"
              DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             Loaded="InvertedCornerHeader_Loaded"
              mc:Ignorable="d" 
              d:DesignHeight="30" d:DesignWidth="400">
     <Grid>
-        <Path Fill="Black" Stretch="Fill" Panel.ZIndex="1">
-            <Path.Data>
-                <GeometryGroup>
-                    <CombinedGeometry GeometryCombineMode="Exclude">
-                        <CombinedGeometry.Geometry1>
-                            <RectangleGeometry Rect="0,0,200,15" />
-                        </CombinedGeometry.Geometry1>
-                        <CombinedGeometry.Geometry2>
-                            <EllipseGeometry Center="0,0" RadiusX="20" RadiusY="15" />
-                        </CombinedGeometry.Geometry2>
-                    </CombinedGeometry>
-                    <CombinedGeometry GeometryCombineMode="Exclude">
-                        <CombinedGeometry.Geometry1>
-                            <RectangleGeometry Rect="200,0,200,15" />
-                        </CombinedGeometry.Geometry1>
-                        <CombinedGeometry.Geometry2>
-                            <EllipseGeometry Center="400,0" RadiusX="20" RadiusY="15" />
-                        </CombinedGeometry.Geometry2>
-                    </CombinedGeometry>
-                    <CombinedGeometry GeometryCombineMode="Exclude">
-                        <CombinedGeometry.Geometry1>
-                            <RectangleGeometry Rect="0,15,200,15" />
-                        </CombinedGeometry.Geometry1>
-                        <CombinedGeometry.Geometry2>
-                            <EllipseGeometry Center="0,30" RadiusX="20" RadiusY="15" />
-                        </CombinedGeometry.Geometry2>
-                    </CombinedGeometry>
-                    <CombinedGeometry GeometryCombineMode="Exclude">
-                        <CombinedGeometry.Geometry1>
-                            <RectangleGeometry Rect="200,15,200,15" />
-                        </CombinedGeometry.Geometry1>
-                        <CombinedGeometry.Geometry2>
-                            <EllipseGeometry Center="400,30" RadiusX="20" RadiusY="15" />
-                        </CombinedGeometry.Geometry2>
-                    </CombinedGeometry>
-                </GeometryGroup>
-            </Path.Data>
-        </Path>
-        <TextBlock Panel.ZIndex="2" Text="{Binding HeaderText, FallbackValue=Header}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="24" />
+        <Path x:Name="Background" Fill="Black"/>
+        <TextBlock Text="{Binding HeaderText, FallbackValue=Header}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="24" />
     </Grid>
 </UserControl>
