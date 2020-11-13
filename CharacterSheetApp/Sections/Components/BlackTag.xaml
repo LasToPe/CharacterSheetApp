@@ -5,11 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CharacterSheetApp.Sections.Components"
              DataContext="{Binding RelativeSource={RelativeSource Self}}"
-             mc:Ignorable="d" 
-             d:DesignHeight="45" d:DesignWidth="75">
+             mc:Ignorable="d" >
     <Border Background="Black" Margin="5">
         <StackPanel>
-            <TextBlock Text="{Binding Abbreviation, FallbackValue=CON}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" />
+            <TextBlock Text="{Binding Abbreviation, FallbackValue=CON}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" />
             <TextBlock Text="{Binding FullName, FallbackValue=Constitution}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="9" Margin="0,-4,0,0" />
         </StackPanel>
     </Border>

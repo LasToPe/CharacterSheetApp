@@ -15,6 +15,11 @@
         <Setter Property="Margin" Value="5" />
     </Style>
 
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Times New Roman" />
+        <Setter Property="Typography.Capitals" Value="SmallCaps" />
+    </Style>
+
     <Style TargetType="TextBlock" x:Key="Center">
         <Setter Property="HorizontalAlignment" Value="Center" />
         <Setter Property="VerticalAlignment" Value="Center" />
