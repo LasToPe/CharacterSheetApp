@@ -46,6 +46,17 @@
                     </StackPanel>
                 </Grid>
                 <sections:AcItems Margin="0,15,0,0" />
+                <Grid Margin="0,15,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0">
+                        <sections:Gear />
+                    </StackPanel>
+                    
+                </Grid>
             </StackPanel>
         </ScrollViewer>
     </Grid>
