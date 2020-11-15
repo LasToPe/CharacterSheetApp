@@ -11,7 +11,7 @@ namespace CharacterSheetApp
         public MainWindow()
         {
             InitializeComponent();
-            MainContent.Navigate(new Sheet1e());
+            MainContent.Navigate(new Pathfinder1e());
         }
     }
 }

@@ -16,9 +16,9 @@ namespace CharacterSheetApp.Pages
     /// <summary>
     /// Interaction logic for Sheet1e.xaml
     /// </summary>
-    public partial class Sheet1e : Page
+    public partial class Pathfinder1e : Page
     {
-        public Sheet1e()
+        public Pathfinder1e()
         {
             InitializeComponent();
         }
