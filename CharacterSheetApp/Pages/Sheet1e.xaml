@@ -55,6 +55,11 @@
                     <StackPanel Grid.Column="0">
                         <sections:Gear />
                     </StackPanel>
+
+                    <StackPanel Grid.Column="1">
+                        <sections:Feats />
+                        <sections:SpecialAbilities />
+                    </StackPanel>
                     
                 </Grid>
             </StackPanel>
