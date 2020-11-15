@@ -45,6 +45,7 @@
                         <sections:Skills />
                     </StackPanel>
                 </Grid>
+                <sections:AcItems Margin="0,15,0,0" />
             </StackPanel>
         </ScrollViewer>
     </Grid>
