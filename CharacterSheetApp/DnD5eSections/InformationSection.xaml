@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="CharacterSheetApp.DnD5eSections.InformationSection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CharacterSheetApp.DnD5eSections"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" d:DesignWidth="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.RowSpan="2">
+            <Image Source="/Assets/DnDSheet/CharacterNameDecoration_1.png" Width="150" Margin="-1,-39,331,39" RenderTransformOrigin="0.5,0.5" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="3.89"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image Source="/Assets/DnDSheet/CharacterNameDecoration_2.png" Width="150" Margin="341,16,-11,-16" />
+            <TextBox Text="{Binding CharacterName}" md:TextFieldAssist.HasOutlinedTextField="True" Style="{StaticResource MaterialDesignFloatingHintTextBox}" md:HintAssist.Hint="Character Name" Margin="5,0" VerticalAlignment="Center" />
+        </Grid>
+
+        <TextBox Text="{Binding ClassAndLevel}" Style="{StaticResource MaterialDesignFloatingHintTextBox}" md:HintAssist.Hint="Class &amp; Level" Grid.Row="0" Grid.Column="1" Margin="5" />
+        <TextBox Text="{Binding Background}" Style="{StaticResource MaterialDesignFloatingHintTextBox}" md:HintAssist.Hint="Background" Grid.Row="0" Grid.Column="2" Margin="5" />
+        <TextBox Text="{Binding PlayerName}" Style="{StaticResource MaterialDesignFloatingHintTextBox}" md:HintAssist.Hint="Player Name" Grid.Row="0" Grid.Column="3" Margin="5" />
+
+        <TextBox Text="{Binding Race}" Style="{StaticResource MaterialDesignFloatingHintTextBox}" md:HintAssist.Hint="Race" Grid.Row="1" Grid.Column="1" Margin="5" />
+        <TextBox Text="{Binding Alignment}" Style="{StaticResource MaterialDesignFloatingHintTextBox}" md:HintAssist.Hint="Alignment" Grid.Row="1" Grid.Column="2" Margin="5" />
+        <TextBox Text="{Binding ExperiencePoints}" Style="{StaticResource MaterialDesignFloatingHintTextBox}" md:HintAssist.Hint="Experience Points" Grid.Row="1" Grid.Column="3" Margin="5" />
+    </Grid>
+</UserControl>

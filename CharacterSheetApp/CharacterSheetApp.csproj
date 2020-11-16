@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\DnD-logo.png" />
+    <None Remove="Assets\DnDSheet\CharacterNameDecoration.png" />
+    <None Remove="Assets\DnDSheet\CharacterNameDecoration_1.png" />
+    <None Remove="Assets\DnDSheet\CharacterNameDecoration_2.png" />
     <None Remove="Assets\Pathfinder-logo.png" />
   </ItemGroup>
 
@@ -15,7 +19,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\DnD-logo.png" />
+    <Resource Include="Assets\DnDSheet\CharacterNameDecoration.png" />
+    <Resource Include="Assets\DnDSheet\CharacterNameDecoration_1.png" />
+    <Resource Include="Assets\DnDSheet\CharacterNameDecoration_2.png" />
     <Resource Include="Assets\Pathfinder-logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DnD5eSections\Components\" />
   </ItemGroup>
 
 </Project>
