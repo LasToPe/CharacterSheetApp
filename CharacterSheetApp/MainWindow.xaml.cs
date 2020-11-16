@@ -13,5 +13,15 @@ namespace CharacterSheetApp
             InitializeComponent();
             MainContent.Navigate(new Pathfinder1e());
         }
+
+        private void Pathfinder1e_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Navigate(new Pathfinder1e());
+        }
+
+        private void DnD5e_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Navigate(new DnD5e());
+        }
     }
 }

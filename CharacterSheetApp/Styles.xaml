@@ -2,26 +2,5 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
                     xmlns:local="clr-namespace:CharacterSheetApp">
-    <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
-        <Setter Property="md:TextFieldAssist.HasOutlinedTextField" Value="True" />
-        <Setter Property="Margin" Value="5" />
-    </Style>
-
-    <Style TargetType="TextBox" x:Key="Underlined" BasedOn="{StaticResource MaterialDesignTextBox}">
-        <Setter Property="Margin" Value="5" />
-    </Style>
-
-    <Style TargetType="TextBox" x:Key="UnderlinedFloat" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
-        <Setter Property="Margin" Value="5" />
-    </Style>
-
-    <Style TargetType="TextBlock">
-        <Setter Property="FontFamily" Value="Times New Roman" />
-        <Setter Property="Typography.Capitals" Value="SmallCaps" />
-    </Style>
-
-    <Style TargetType="TextBlock" x:Key="Center">
-        <Setter Property="HorizontalAlignment" Value="Center" />
-        <Setter Property="VerticalAlignment" Value="Center" />
-    </Style>
+    
 </ResourceDictionary>

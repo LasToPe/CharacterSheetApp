@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="900" Width="1250" MinWidth="1250">
     <Grid>
-        <Frame x:Name="MainContent" NavigationUIVisibility="Hidden" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Pathfinder 1e" Click="Pathfinder1e_Click" />
+                <Button Content="DnD 5e" Click="DnD5e_Click" />
+            </StackPanel>
+            <Frame x:Name="MainContent" Grid.Row="1" NavigationUIVisibility="Hidden" />
+        </Grid>
     </Grid>
 </Window>
