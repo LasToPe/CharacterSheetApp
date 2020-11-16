@@ -3,7 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:CharacterSheetApp.Pages" xmlns:sections="clr-namespace:CharacterSheetApp.Sections"
+      xmlns:local="clr-namespace:CharacterSheetApp.Pages" xmlns:sections="clr-namespace:CharacterSheetApp.Pathfinder1eSections"
       mc:Ignorable="d" d:DesignWidth="1250"
       Title="Sheet1e">
 

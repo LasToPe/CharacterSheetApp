@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="CharacterSheetApp.Pathfinder1eSections.Skills"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CharacterSheetApp.Pathfinder1eSections" xmlns:components="clr-namespace:CharacterSheetApp.Pathfinder1eSections.Components"
+             mc:Ignorable="d" d:DesignWidth="625">
+    <StackPanel>
+        <components:InvertedCornersHeader HeaderText="Skills"/>
+
+        <Grid Margin="0,5,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1" Text="Skill Name" Margin="5,0" />
+            <TextBlock Grid.Column="2" Text="Total" HorizontalAlignment="Center" />
+            <TextBlock Grid.Column="5" Text="Ability Mod" HorizontalAlignment="Center" />
+            <TextBlock Grid.Column="7" Text="Ranks" HorizontalAlignment="Center" />
+            <TextBlock Grid.Column="9" Text="Misc" HorizontalAlignment="Center" />
+        </Grid>
+        <components:Skill SkillName="Acrobatics" Ability="Dex"  />
+        <components:Skill SkillName="Appraise" Ability="Int"  />
+        <components:Skill SkillName="Bluff" Ability="Cha"  />
+        <components:Skill SkillName="Climb" Ability="Str"  />
+        <components:Skill SkillName="Craft" Ability="Int"  />
+        <components:Skill SkillName="Diplomacy" Ability="Cha"  />
+        <components:Skill SkillName="Disable Device*" Ability="Dex"  />
+        <components:Skill SkillName="Disguise" Ability="Cha"  />
+        <components:Skill SkillName="Escape Artist" Ability="Dex"  />
+        <components:Skill SkillName="Fly" Ability="Dex"  />
+        <components:Skill SkillName="Handle Animal*" Ability="Cha"  />
+        <components:Skill SkillName="Heal" Ability="Wis"  />
+        <components:Skill SkillName="Intimidate" Ability="Cha"  />
+        <components:Skill SkillName="Knowledge (arcana)*" Ability="Int"  />
+        <components:Skill SkillName="Knowledge (dungeoneering)*" Ability="Int"  />
+        <components:Skill SkillName="Knowledge (engineering)*" Ability="Int"  />
+        <components:Skill SkillName="Knowledge (geography)*" Ability="Int"  />
+        <components:Skill SkillName="Knowledge (history)*" Ability="Int"  />
+        <components:Skill SkillName="Knowledge (local)*" Ability="Int"  />
+        <components:Skill SkillName="Knowledge (nature)*" Ability="Int"  />
+        <components:Skill SkillName="Knowledge (nobility)*" Ability="Int"  />
+        <components:Skill SkillName="Knowledge (planes)*" Ability="Int"  />
+        <components:Skill SkillName="Knowledge (religion)*" Ability="Int"  />
+        <components:Skill SkillName="Linguistics*" Ability="Int"  />
+        <components:Skill SkillName="Perception" Ability="Wis"  />
+        <components:Skill SkillName="Perform" Ability="Cha"  />
+        <components:Skill SkillName="Profession*" Ability="Wis"  />
+        <components:Skill SkillName="Ride" Ability="Dex"  />
+        <components:Skill SkillName="Sense Motive" Ability="Wis"  />
+        <components:Skill SkillName="Sleight of Hand*" Ability="Dex"  />
+        <components:Skill SkillName="Spellcraft*" Ability="Int"  />
+        <components:Skill SkillName="Stealth" Ability="Dex"  />
+        <components:Skill SkillName="Survival" Ability="Wis"  />
+        <components:Skill SkillName="Use Magic Device" Ability="Cha"  />
+
+    </StackPanel>
+</UserControl>

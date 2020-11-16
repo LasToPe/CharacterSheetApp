@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="CharacterSheetApp.Pathfinder1eSections.Components.SavingThrow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CharacterSheetApp.Pathfinder1eSections.Components"
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             mc:Ignorable="d" d:DesignWidth="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="0.2*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="0.2*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="0.2*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="0.2*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="0.2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <local:BlackTag x:Name="Tag" />
+        <TextBox Grid.Column="1" Text="{Binding Total}" TextAlignment="Center" />
+        <TextBlock Grid.Column="2" Text="=" Style="{DynamicResource Center}" />
+        <TextBox Grid.Column="3" Text="{Binding BaseSave}" TextAlignment="Center" />
+        <TextBlock Grid.Column="4" Text="+" Style="{DynamicResource Center}" />
+        <TextBox Grid.Column="5" Text="{Binding AbilityMod}" TextAlignment="Center" />
+        <TextBlock Grid.Column="6" Text="+" Style="{DynamicResource Center}" />
+        <TextBox Grid.Column="7" Text="{Binding MagicMod}" TextAlignment="Center" />
+        <TextBlock Grid.Column="8" Text="+" Style="{DynamicResource Center}" />
+        <TextBox Grid.Column="9" Text="{Binding MiscMod}" TextAlignment="Center" />
+        <TextBlock Grid.Column="10" Text="+" Style="{DynamicResource Center}" />
+        <TextBox Grid.Column="11" Text="{Binding TempMod}" TextAlignment="Center" />
+
+    </Grid>
+</UserControl>
