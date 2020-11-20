@@ -18,7 +18,8 @@ namespace CharacterSheetApp.DnD5eSections.Components
     /// </summary>
     public partial class AbilityScore : UserControl
     {
-        public string AbilityName { get; set; }
+        public static readonly DependencyProperty AbilityNameProperty = DependencyProperty.Register(nameof(AbilityName), typeof(string), typeof(AbilityScore));
+        public string AbilityName { get => GetValue(AbilityNameProperty) as string; set => SetValue(AbilityNameProperty, value); }
 
         public AbilityScore()
         {

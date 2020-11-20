@@ -8,5 +8,10 @@
              mc:Ignorable="d" d:DesignWidth="75">
     <StackPanel>
         <components:AbilityScore AbilityName="STRENGTH" />
+        <components:AbilityScore AbilityName="DEXTERITY" />
+        <components:AbilityScore AbilityName="CONSTITUTION" />
+        <components:AbilityScore AbilityName="INTELLIGENCE" />
+        <components:AbilityScore AbilityName="WISDOM" />
+        <components:AbilityScore AbilityName="CHARISMA" />
     </StackPanel>
 </UserControl>

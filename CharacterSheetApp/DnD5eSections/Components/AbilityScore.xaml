@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
         <Image Source="/Assets/DnDSheet/AbilityScoreBackground.png" Grid.RowSpan="3" />
         <TextBlock Text="{Binding AbilityName, FallbackValue=INTELLIGENCE}" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="8" FontWeight="Bold"  />
-        <TextBox x:Name="Modifier" Grid.Row="1" Style="{StaticResource MaterialDesignFilledTextFieldTextBox}" Margin="7,0" />
-        <TextBox x:Name="Score" Grid.Row="2" Style="{StaticResource MaterialDesignFilledTextFieldTextBox}" Margin="25,5" />
+        <TextBox x:Name="Modifier" Grid.Row="1" Style="{DynamicResource Invisible}" FontSize="20" Margin="7,0" TextAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBox x:Name="Score" Grid.Row="2" Style="{DynamicResource Invisible}" Margin="20,2,20,5" TextAlignment="Center" VerticalContentAlignment="Center" FontSize="9" />
     </Grid>
 </UserControl>
